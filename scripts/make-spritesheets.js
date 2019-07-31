@@ -3,8 +3,14 @@ var fs = require('fs');
 var glob = require('glob');
 var path = require('path');
 var mkdirp = require('mkdirp');
+var gatherFiles = require('./gather-files');
 
 mkdirp.sync(path.resolve(path.join(__dirname, '../dist')));
+
+fs.writeFileSync(
+  './dist/svgicons.json',
+  JSON.stringify(gatherFiles(path.join(__dirname, '../icons')))
+);
 
 [1, 2, 4].forEach(function(pxRatio) {
   var svgs = glob
