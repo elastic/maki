@@ -13,13 +13,11 @@
     "prepublish": "node scripts/make-spritesheets.js"
   },
   "devDependencies": {
-    "@mapbox/spritezero": "github:nickpeihl/spritezero#sdf-option",
-    "@mapbox/style-components": "^0.7.0",
+    "@elastic/spritezero": "6.2.0",
     "eslint": "^5.6.0",
     "glob": "^7.1.4",
     "husky": "^1.0.0",
     "mkdirp": "^0.5.1",
-    "pify": "^4.0.1",
     "prettier": "^1.14.3",
     "tap-spec": "^4.1.2",
     "tape": "^4.11.0",

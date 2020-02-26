@@ -1,4 +1,4 @@
-var spritezero = require('@mapbox/spritezero');
+var spritezero = require('@elastic/spritezero');
 var fs = require('fs');
 var glob = require('glob');
 var path = require('path');
